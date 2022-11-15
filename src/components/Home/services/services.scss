@@ -1,0 +1,90 @@
+@import "../../../assets/styles/base/mixin";
+@import "../../../assets/styles/base/variables";
+
+.services {
+  text-align: center;
+  margin-bottom: 5rem;
+  .services_wrapper {
+    .serve_left {
+      h3 {
+        font-family: "Alegreya sans", serif;
+        color: $sec-dark;
+        font-weight: 800;
+        font-size: 43px;
+        margin-top: 0px;
+        font-family: BubblegumSans-Regular;
+      }
+      p {
+        margin-top: 2rem;
+      }
+    }
+  }
+  .serve_cards_wrapper {
+    .serve_card {
+      margin: 2rem auto;
+      transition: 300ms;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 6px 6px 0px rgba(128, 128, 128, 0.356);
+        transform: translate(0, -1.5rem);
+      }
+      &:hover a {
+        background-color: $primary;
+      }
+      img {
+        border-radius: 50%;
+        box-shadow: 6px 6px 0px $sec-light;
+        display: block;
+        width: 100%;
+      }
+      a {
+        text-decoration: none;
+        text-align: center;
+        position: relative;
+        transition: background 0.5s ease-out;
+        background-color: $sec-dark;
+        padding: 15px;
+        border-radius: 10px;
+        color: $white;
+        font-weight: 800;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 10px;
+        font-family: BubblegumSans-Regular;
+
+      }
+    }
+  }
+  .serve_botton {
+    align-items: center;
+    background-repeat: no-repeat;
+    .serve_botton_left {
+      padding: 2rem;
+      h3 {
+        font-family: "Alegreya sans", serif;
+        color: $sec-dark;
+        font-weight: 800;
+        font-size: 2rem;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-family: BubblegumSans-Regular;
+      }
+      p {
+        margin-bottom: 2rem;
+      }
+      a {
+        background-color: $sec-light;
+        font-weight: 700;
+        color: $white;
+        padding: 0.75rem;
+        text-decoration: none;
+        border-radius: 86% 14% 90% 10% / 12% 88% 12% 88%;
+        transition: 300ms;
+        &:hover {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}

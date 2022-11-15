@@ -1,0 +1,34 @@
+// SCSS Files
+@import "../../../../assets/styles/base/mixin";
+@import "../../../../assets/styles/base/variables";
+@import "../../../../assets/styles/base/placeholder";
+
+.cards-wrapper {
+  .age-heading {
+    @extend %page-heading;
+  }
+  .overlay {
+    top: 0;
+    background-image: linear-gradient(0deg, #ec9600 0%, #d12881 100%);
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 10px 10px #ec9600;
+  }
+  .child-card:hover .overlay {
+    opacity: 0.9;
+    transform: translate(-10px, -10px);
+    border-radius: 10px;
+  }
+  .child-card {
+    cursor: pointer;
+  }
+}
+
+// Media Query
+@include breakPoints(desktop) {
+  .cards-wrapper {
+    .age-heading {
+      font-size: 3rem;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+// SCSS Files
+@import "../../../assets/styles/base/mixin";
+@import "../../../assets/styles/base/variables";
+
+.question-wrapper {
+  .main-heading {
+    font-family: "Flavors-Regular";
+    font-size: 3rem;
+    border-bottom: 2px solid $sec-dark;
+    width: fit-content;
+    padding-bottom: 5px;
+    margin: 0px auto 25px;
+    color: $primary;
+  }
+  .single-question {
+    .single-question-heading {
+      background-color: $sec-dark;
+      color: $white;
+      padding: 20px;
+      width: 50%;
+      margin: auto;
+      border-radius: 20px;
+    }
+    .body {
+      font-size: 2.5rem;
+    }
+    .multi-choise {
+      display: flex;
+      justify-content: center;
+      .choose {
+        font-size: 2rem;
+        padding: 5px 40px;
+        margin: 0px 5px;
+        border: 2px solid #000;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Media Query
+@include breakPoints(mobile) {
+  .question-wrapper {
+    .main-heading {
+      font-size: 2rem;
+    }
+    .single-question {
+      .multi-choise {
+        .choose {
+          padding: 5px 20px;
+        }
+      }
+    }
+  }
+}

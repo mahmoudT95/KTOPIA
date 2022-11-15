@@ -1,0 +1,34 @@
+// Media Queiries
+@import "../../../assets/styles/base/mixin";
+@import "../../../assets/styles/base/variables";
+
+Form {
+  .login {
+    background-color: $primary;
+    .inputs {
+      width: 75%;
+    }
+  }
+
+  .log {
+    background-color:$sec-dark;
+    border: 0;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+      background-color: $primary;
+    }
+  }
+}
+
+// Media Query
+@include breakPoints(mobile) {
+  form {
+    .login {
+      .inputs {
+        width: 100%;
+      }
+    }
+  }
+}

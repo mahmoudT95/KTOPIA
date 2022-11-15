@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "BubblegumSans-Regular", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition: 300ms;
+  padding-top: 3rem;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "BubblegumSans-Regular";
+  src: url("./assets/fonts/Bubblegum_Sans/BubblegumSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Flavors-Regular";
+  src: url("./assets/fonts/Flavors/Flavors-Regular.ttf");
+}
+
+/* to make footer in the bootom of the page */
+html,
+body,
+#root {
+  height: 100%;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+ .fun-heading {
+  margin-top: 20rem;
+}

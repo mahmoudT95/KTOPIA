@@ -1,0 +1,29 @@
+@import '../../assets/styles/base/variables';
+#profile{
+    .b-cover{
+        background-color: $sec-dark;
+        height: 200px;
+        .p-img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            z-index: 1;
+            
+        }
+        img{
+            border-radius: 50%;
+        }
+        .p-name{
+            margin-top: 130px;
+        }
+
+        
+    }
+    .p-nd-bg{
+        background-color:  #f8f9fa;
+    }
+
+    .p-about{
+        background-color:#f8f9fa ;
+    }
+}

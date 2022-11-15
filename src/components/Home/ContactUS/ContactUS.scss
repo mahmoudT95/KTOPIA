@@ -1,0 +1,19 @@
+.contact-us-section {
+  .contact {
+    box-shadow: 1px 4px 1px #80808057,
+      0 15px 40px rgba(6, 25, 101, 0.2);
+    color: #fff;
+    .form-control {
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      box-shadow: 1px 4px 1px #80808057;
+    }
+    button.submit {
+      background-color: #ec9600;
+    }
+  }
+  @media (max-width: 767px) {
+    img {
+      display: none;
+    }
+  }
+}

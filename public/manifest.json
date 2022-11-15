@@ -1,0 +1,39 @@
+{
+  
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+    "display" : "standalone",
+    "scope" : ".",
+    "start_url" : "/",
+    "name" : "KITOPIA",
+    "short_name" : "KITOPIA",
+    
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "",
+      "type": "image/png",
+      "purpose": " any"
+    }, {
+      "src": "logo192.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }, {
+      "src": "logo256.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }, {
+      "src": "logo286.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }, {
+      "src": "logo512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}
+ 

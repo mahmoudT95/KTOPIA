@@ -1,0 +1,57 @@
+@import "../../../assets/styles/base/mixin";
+@import "../../../assets/styles/base/variables";
+.aboutUs {
+  margin-bottom: 5rem;
+  .aboutUs_wrapper {
+    .about_top {
+      .carousel-control-next-icon,
+      .carousel-control-next-icon {
+        display: none;
+      }
+      .carousel-control-prev-icon,
+      .carousel-control-prev-icon {
+        display: none;
+      }
+
+      margin-bottom: 5rem;
+      .about_left {
+        .Carousel_outline {
+          border: solid 7px $sec-dark;
+          border-radius: 50%;
+          overflow: hidden;
+          background-color: $sec-light;
+        }
+        img {
+          height: 350px;
+          width: 100px;
+          border-radius: 50%;
+        }
+      }
+      .about_right {
+        h3 {
+          text-align: center;
+          font-family: BubblegumSans-Regular;
+          color: $sec-dark;
+          font-weight: 800;
+          font-size: 2.5rem;
+          margin-top: 0px;
+        }
+      }
+    }
+    .about_cards_wrapper {
+      margin-bottom: 5rem;
+      .about_card {
+        margin: 1rem auto;
+        text-align: center;
+        transition: 300ms;
+        &:hover {
+          box-shadow: 6px 6px 0px rgba(128, 128, 128, 0.356);
+          transform: translate(0, -1.5rem);
+        }
+        h4 {
+          font-family: BubblegumSans-Regular;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+// SCSS Files
+@import "../../../assets/styles/base/mixin";
+@import "../../../assets/styles/base/variables";
+
+.game-wrapper {
+  .game-heading {
+    font-size: 5rem;
+    font-family: "Flavors-Regular";
+    text-align: center;
+    color: $white;
+    background-color: $sec-dark;
+    width: fit-content;
+    margin: auto;
+    padding: 30px;
+    border-radius: 480px 45px 225px 75px/15px 225px 15px 255px;
+    position: relative;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    &::after {
+      content: url(../../../assets/images/games/ticket.png);
+      position: absolute;
+      left: 0;
+      top: -20px;
+    }
+  }
+  .game-list {
+    .game {
+      text-align: center;
+      .game-icon {
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .game-name {
+        font-size: 2.5rem;
+        color: $sec-dark;
+      }
+    }
+    .bubbles {
+      .bubble {
+        position: absolute;
+        bottom: -100px;
+        width: 40px;
+        height: 40px;
+        background: $sec-dark;
+        border-radius: 50%;
+        opacity: 0.5;
+        animation: bubblesGames 5s infinite ease-in;
+      }
+      .bubble:nth-child(1) {
+        width: 40px;
+        height: 40px;
+        left: 10%;
+        animation-duration: 8s;
+      }
+      .bubble:nth-child(2) {
+        width: 20px;
+        height: 20px;
+        left: 20%;
+        animation-duration: 5s;
+        animation-delay: 1s;
+      }
+      .bubble:nth-child(3) {
+        width: 50px;
+        height: 50px;
+        left: 35%;
+        animation-duration: 5s;
+        animation-delay: 2s;
+      }
+      .bubble:nth-child(4) {
+        width: 80px;
+        height: 80px;
+        left: 50%;
+        animation-duration: 11s;
+        animation-delay: 0s;
+      }
+      .bubble:nth-child(5) {
+        width: 35px;
+        height: 35px;
+        left: 55%;
+        animation-duration: 6s;
+        animation-delay: 1s;
+      }
+      .bubble:nth-child(6) {
+        width: 45px;
+        height: 45px;
+        left: 65%;
+        animation-duration: 8s;
+        animation-delay: 3s;
+      }
+      .bubble:nth-child(7) {
+        width: 90px;
+        height: 90px;
+        left: 70%;
+        animation-duration: 12s;
+        animation-delay: 2s;
+      }
+      .bubble:nth-child(8) {
+        width: 25px;
+        height: 25px;
+        left: 80%;
+        animation-duration: 6s;
+        animation-delay: 2s;
+      }
+      .bubble:nth-child(9) {
+        width: 15px;
+        height: 15px;
+        left: 70%;
+        animation-duration: 5s;
+        animation-delay: 1s;
+      }
+      .bubble:nth-child(10) {
+        width: 90px;
+        height: 90px;
+        left: 25%;
+        animation-duration: 10s;
+        animation-delay: 4s;
+      }
+    }
+  }
+}
+
+// Media Query
+@include breakPoints(desktop) {
+  .game-wrapper {
+    .game-heading {
+      font-size: 3rem;
+      &::after {
+        top: 0;
+      }
+    }
+  }
+}
+
+// images Animations
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+// Bubbles Animations
+@keyframes bubblesGames {
+  0% {
+    bottom: -100%;
+    transform: translateX(0);
+  }
+  50% {
+    transform: translate(100px);
+  }
+  100% {
+    bottom: 100%;
+    transform: translateX(-200px);
+  }
+}

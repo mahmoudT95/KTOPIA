@@ -1,0 +1,65 @@
+@import "../../assets/styles/base/variables";
+
+.darkMode {
+  .navbar {
+    background-color: $dark;
+  }
+  background-color: $dark;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  q,
+  p,
+  span,
+  div {
+    color: $white;
+  }
+  .slide_description {
+    background-color: $dark;
+    h1 {
+      color: $white;
+    }
+  }
+  .services .serve_botton .serve_botton_left h3 {
+    color: #ffffff;
+  }
+  .aboutUs .aboutUs_wrapper .about_top .about_right h3 {
+    color: #ffffff;
+  }
+  .fun-wrapper .fun-list .fun .fun-category {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.my-card p{
+  color: $sec-dark;
+}
+
+.education-wrapper .edu-list .edu .edu-category {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.game-wrapper .game-list .game .game-name {
+  font-size: 2.5rem;
+  color: #ffff;
+}
+
+#cardWrap .my-card .card-text {
+  color: $sec-dark;
+}
+
+  .navbar {
+    box-shadow: -4px 6px 8px 0px grey;
+  }
+
+
+  .navbar-toggler {
+    border: solid 1px #fff;
+  }
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,64 @@
+// Media Queiries
+@import "../../assets/styles/base/mixin";
+@import "../../assets/styles/base/variables";
+
+header {
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: $primary;
+    padding: 0;
+    .navbar-brand {
+      img {
+        width: 150px;
+      }
+    }
+    .navbar-collapse {
+      justify-content: end;
+      .navbar-nav {
+        .nav-item {
+          position: relative;
+          :hover {
+            background-color: $sec-light;
+          }
+          .nav-link {
+            font-size: 1.8rem;
+            color: $white;
+            padding: 10px 20px;
+            margin: 0 1px;
+          }
+          .active {
+            background-color: $sec-light;
+          }
+        }
+      }
+    }
+  }
+}
+// Media Query
+@include breakPoints(desktop) {
+  header {
+    .navbar {
+      .navbar-toggler {
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      .navbar-collapse {
+        flex-grow: unset;
+        .navbar-nav {
+          flex-direction: row;
+          justify-content: center;
+          padding-top: 20px;
+          .nav-item {
+            .nav-link {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

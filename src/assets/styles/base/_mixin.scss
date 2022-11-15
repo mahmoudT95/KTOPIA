@@ -1,0 +1,38 @@
+// Media Queiries
+@mixin breakPoints($media) {
+  @if $media == mobile {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+  // applies to x-small devices (portrait phones, less than 576px)
+  @if $media == tablet {
+    @media (max-width: 575.98px) {
+      @content;
+    }
+  }
+  // applies to small devices (landscape phones, less than 768px)
+  @if $media == mediumScreen {
+    @media (max-width: 767.98px) {
+      @content;
+    }
+  }
+  // applies to medium devices (tablets, less than 992px)
+  @if $media == desktop {
+    @media (max-width: 991.98px) {
+      @content;
+    }
+  }
+  // applies to large devices (desktops, less than 1200px)
+  @if $media == xldesktop {
+    @media (max-width: 1199.98px) {
+      @content;
+    }
+  }
+  // applies to x-large devices (large desktops, less than 1400px)
+  @if $media == xxldesktop {
+    @media (max-width: 1399.98px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import "../../../assets/styles/base/mixin";
+@import "../../../assets/styles/base/variables";
+.parents-feedback-section {
+  margin-bottom: 7rem;
+  .feedback {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 40px 40px 80px;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 65px;
+    .parent-name {
+      color: $primary;
+      font-family: Flavors-Regular;
+      font-size: 1.8rem;
+    }
+    q {
+      line-height: 2;
+      font-family: BubblegumSans-Regular;
+      font-size: 1.25rem;
+    }
+    figure {
+      left: 50%;
+      bottom: -65px;
+      transform: translateX(-50%);
+      img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+      }
+    }
+    &:hover {
+      background-color: $sec-light;
+      color: $white;
+    }
+    &:hover .parent-name {
+      color: $white;
+    }
+    &:hover figure img {
+      transform: scale3d(1.2, 1.2, 0.3);
+    }
+  }
+  .carousel-indicators {
+    bottom: -20px;
+  }
+  .carousel-indicators [data-bs-target] {
+    background-color: $primary;
+  }
+  .carousel-control-next-icon {
+    background-image: url("../../../assets/images/home/parents_feedback/right-arrow.png");
+  }
+  .carousel-control-next {
+    right: -35px;
+    top: -50px;
+  }
+  .carousel-control-prev-icon {
+    background-image: url("../../../assets/images/home/parents_feedback/left-arrow.png");
+  }
+  .carousel-control-prev {
+    left: -35px;
+    top: -50px;
+  }
+  @media (max-width: 991px) {
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      background-image: none;
+    }
+    .carousel-indicators {
+      bottom: -60px;
+    }
+    .carousel-control-next {
+      right: 0;
+    }
+    .carousel-control-prev {
+      right: 0;
+    }
+  }
+}

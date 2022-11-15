@@ -1,0 +1,145 @@
+@import "../../../assets/styles/base/mixin";
+@import "../../../assets/styles/base/variables";
+.hero{
+    position: relative;
+    margin-bottom: 5rem;
+    .img_slide{
+        height: 85vh;
+        width: 100%;
+    }
+    
+    .slide_description{
+        position: absolute;
+        left: 0px;
+        top: -20rem;
+        width: 30rem;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 86% 14% 90% 10% / 12% 88% 12% 88% ;
+        border: solid 7px $primary;
+        h1{
+            color: #34327C;
+            font-weight: 800;
+            font-size: 3rem;
+            font-family: BubblegumSans-Regular;
+        }
+        h4{
+            font-size: 16px;
+            color: gray;
+            margin-bottom: 2rem;
+            font-family: BubblegumSans-Regular;
+        }
+        a{
+            background-color: #d12881;
+            font-weight: 700;
+            color: #fff;
+            padding: .75rem;
+            text-decoration: none;
+            border-radius: 86% 14% 90% 10% / 12% 88% 12% 88% ;
+            transition: 300ms;
+            &:hover{
+                background-color: $primary;
+            }
+        }
+        .des_img1{
+            position: absolute;
+            top: -5rem;
+            left: -5rem;
+            width: 20%;
+
+
+        }
+        .des_img2{
+            position: absolute;
+            bottom: -5rem;
+            right: -5rem;
+            width: 20%;
+
+
+        }
+
+    }
+    .carousel-control-next-icon, .carousel-control-next-icon {
+        // margin-right: -5rem;
+        background-color: $primary;
+        // padding: 1.3rem;
+        border-radius: 50%;
+
+      }
+      .carousel-control-prev-icon, .carousel-control-prev-icon {
+        // margin-left: -5rem;
+        background-color: $primary;
+        // padding: 1.3rem;
+        border-radius: 50%;
+
+        
+      }
+
+      
+}
+
+
+
+// ========================= media query ========================
+@media only screen and (max-width: 1200px) {
+    .hero{
+        position: relative;
+        margin-bottom: 5rem;
+        .img_slide{
+            height: 70vh;
+        width: 100%;
+        }
+        
+        .slide_description{
+            position: absolute;
+            left: 0px;
+            top: -15rem;
+            width: 15rem;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 86% 14% 90% 10% / 12% 88% 12% 88% ;
+            border: solid 7px orange;
+            h1{
+                color: #34327C;
+                font-weight: 800;
+                font-size: 1.5rem;
+                font-family: BubblegumSans-Regular;
+            }
+            h4{
+                font-size: 16px;
+                color: gray;
+                margin-bottom: 1rem;
+                font-family: BubblegumSans-Regular;
+            }
+            a{
+                background-color: #d12881;
+                font-weight: 700;
+                color: #fff;
+                padding: .5rem;
+                text-decoration: none;
+                border-radius: 86% 14% 90% 10% / 12% 88% 12% 88% ;
+                transition: 300ms;
+                &:hover{
+                    background-color: orange;
+                }
+            }
+            .des_img1{
+                position: absolute;
+                top: -2rem;
+                left: -2rem;
+                width: 20%;
+    
+            }
+            .des_img2{
+                position: absolute;
+                bottom: -2rem;
+                right: -2rem;
+                width: 20%;
+            }
+    
+        }
+        
+          
+    }
+    
+  }

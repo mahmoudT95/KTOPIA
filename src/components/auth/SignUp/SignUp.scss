@@ -1,0 +1,63 @@
+// Media Queiries
+@import "../../../assets/styles/base/mixin";
+@import "../../../assets/styles/base/variables";
+
+Form.auth {
+  margin-top: 40px;
+  box-shadow: 0 5px 10px rgba(16, 55, 210, 0.05),
+    0 15px 40px rgba(6, 25, 101, 0.2);
+
+  input[type="file"] {
+    display: none;
+  }
+  .btn
+  {
+    width:150px;
+  }
+  .parent-child {
+    box-shadow: 0 5px 10px rgba(16, 55, 210, 0.05),
+      0 15px 40px rgba(6, 25, 101, 0.2);
+    background-color: $primary;
+  }
+  .iputs
+  {
+    width:50%;
+  }
+  .sign {
+    background-color: $sec-dark;
+    border: 0;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+      background-color: $primary;
+    }
+  }
+
+  .chimg,
+  .paimg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .link {
+    text-decoration: none;
+    color: $sec-dark;
+  }
+}
+
+// Media Query
+@include breakPoints(mobile) {
+
+  form.auth
+  {
+    .chimg,
+    .paimg {
+    display: none;
+    }
+    .iputs
+    {
+      width:100%;
+    }
+  }
+}

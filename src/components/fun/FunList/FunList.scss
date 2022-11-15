@@ -1,0 +1,109 @@
+// SCSS Files
+@import "../../../assets/styles/base/mixin";
+@import "../../../assets/styles/base/variables";
+
+.fun-wrapper {
+  background-position: center center;
+  background-size: cover;
+  height: calc(100vh - 63px);
+  .fun-heading {
+    font-size: 5rem;
+    font-family: "Flavors-Regular";
+    text-align: center;
+    color: $white;
+    background-color: $sec-dark;
+    width: fit-content;
+    margin: auto;
+    padding: 30px;
+    border-radius: 480px 45px 225px 75px/15px 225px 15px 255px;
+    position: relative;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  }
+  .fun-list {
+    .fun {
+      text-align: center;
+      .fun-icon {
+        text-align: center;
+        img {
+          width: 30%;
+          cursor: pointer;
+        }
+        .bee {
+          animation: dance 1s ease-in-out 0s infinite normal forwards;
+        }
+        .tv {
+          animation: tv 2s ease-in-out 0s infinite normal none;
+        }
+      }
+      .fun-category {
+        font-size: 2.5rem;
+        color: $sec-dark;
+      }
+    }
+  }
+}
+
+// Media Query
+@include breakPoints(desktop) {
+  .fun-wrapper {
+    .fun-heading {
+      font-size: 3rem;
+    }
+  }
+}
+
+// Animation Images (Dance Animation)
+@keyframes dance {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 0;
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+}
+// Animation For TV
+@keyframes tv {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}

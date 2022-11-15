@@ -1,0 +1,82 @@
+@import  '../../assets/styles/base/mixin';
+.watch-wrapper {
+  .description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #34327c1d;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid;
+    .info {
+      display: flex;
+      align-items: center;
+      .video-info {
+        .video-title {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+  }
+  
+  
+}
+
+  
+.container_comment{
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+
+  img{
+    border-radius: 50%;
+  }
+
+  .itemComments{
+    font-size: 1.1rem;
+    // border: solid 1px gray;
+    border-radius: 3rem;
+    padding:.2rem 1rem;
+    // color: red;
+  }
+
+  
+}
+// Responsive
+@media (max-width: 2400px){
+  .video-player{
+    height: 75vh !important;
+  }
+}
+@include breakPoints(xxldesktop) {
+  .video-player{
+    height: 55vh !important;
+  }
+}
+
+@include breakPoints(xldesktop) {
+  .video-player{
+    height: 50vh !important;
+  }
+}
+
+@include breakPoints(mediumScreen) {
+  .video-player{
+    height: 45vh !important;
+  }
+}
+@include breakPoints(mobile) {
+  .video-player{
+    height: 40vh !important;
+  }
+}
+@media (max-width: 400px){
+  .video-player{
+    height: 33vh !important;
+  }
+}
+@media (max-width: 300px){
+  .video-player{
+    height: 24vh !important;
+  }
+}
