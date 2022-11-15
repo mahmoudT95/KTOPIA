@@ -1,9 +1,9 @@
 # Getting Started with Create React App
 
-KITOPIA project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+KTOPIA project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Kitopia is a children's community that includes everything a child needs to enjoy the time spent on the Internet.
-The child is affected by what he sees on social media, including videos and advertisements, and this is reflected in his personality and thinking. Therefore,Kitopia takes care of this point in order to preserve the thinking and personality of the child and helps him build his personality without negative effects.
+Ktopia is a children's community that includes everything a child needs to enjoy the time spent on the Internet.
+The child is affected by what he sees on social media, including videos and advertisements, and this is reflected in his personality and thinking. Therefore,Ktopia takes care of this point in order to preserve the thinking and personality of the child and helps him build his personality without negative effects.
 
 
 
